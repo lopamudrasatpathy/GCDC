@@ -23,3 +23,4 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 #A tidy Data set is formed with the average of each variable for each activity and each subject.
 
 
+##I want to thank Blake Gentry and Oscar PDR for their contribution for builting this code.Your valuable advice helps alot to submit this assignment.
