@@ -1,0 +1,32 @@
+Introduction
+
+The script run_analysis.R performs the 5 steps described below:
+
+1. All the similar data is merged using the rbind() function. By similar, we address those files having the same number of columns and referring to the same entities.
+2. Only those columns with the mean and standard deviation measures are taken from the whole dataset. After extracting these columns, they are given the correct names, taken from features.txt.
+3. Activity data is addressed with values 1:6, we take the activity names and IDs from activity_labels.txt and they are substituted in the dataset.
+4. On the whole dataset, those columns with vague column names are corrected.
+5. Finally, we generate a new dataset with all the average measures for each subject and activity type (30 subjects * 6 activities = 180 rows). The output file is called tidy.txt, and uploaded to this repository.
+
+
+
+Variables
+
+1. train, trainActivities,trainSubjects, test, testActivities, testSubject  contain the data from the downloaded files.
+
+2. train and test data are merged to allData for further analysis.
+
+3. Subject and activity are the identifiers.
+
+4. The output summerizes in a text file named tidy.txt .This dataset has averages of each variable for each activity and each subject.
+
+R packages : plyar, rshape2
+
+Activity Labels
+
+1.WALKING (value 1): subject was walking during the test
+2.WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
+3.WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+4.SITTING (value 4): subject was sitting during the test
+5.STANDING(value 5): subject was standing during the test
+6.LAYING (value 6): subject was laying down during the test
